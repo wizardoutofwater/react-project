@@ -6,7 +6,7 @@ const Settings = (props) => {
     const { filmSpeed, shutterSpeed, aperture, selectedEv, calculatedEv } = props.stats
     console.log(selectedEv);
     return(
-    <div className = "hero is-large ">
+    <div className = "container is-large ">
         <section className="section is-large">     
           <div className="container d-shadow is-fluid has-background-grey-lighter p-3">
             <div className="columns is-vcentered">
@@ -78,7 +78,7 @@ const Settings = (props) => {
           </div>
        <div className ="container mt-4">
        <div className="control">
-    <button onClick={(event) => props.handleClick(event)} type="submit" className="button is-primary">Calculate</button>
+    <button className="d-shadow" onClick={(event) => props.handleClick(event)} type="submit" className="button is-primary">Calculate</button>
   </div>
        </div>
         </section>
