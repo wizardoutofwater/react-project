@@ -2,8 +2,11 @@ import { Component } from "react";
 import Footer from "./components/Footer";
 import Stats from "./components/Stats";
 import Selector from "./components/Selector";
-import Hero from "./components/Hero";
+import Compare from "./components/Compare";
 import Settings from "./components/Settings";
+import Header from "./components/Header"
+import Conditions from "./components/Conditions"
+import Instructions from "./components/Instructions"
 
 import "./App.css";
 
@@ -74,13 +77,17 @@ class App extends Component {
     } = this.state;
     return (
       <div className="App">
+        <Header />
+       <Instructions />
+        <Conditions  selectedEv={selectedEv} handleUpdate={(field, val) => this._handleUpdate(field, val)} />
         <Stats stats={this.state} />
-        <Hero selectedEv={selectedEv} calculatedEv={calculatedEv} />
+      
         <Settings
           stats={this.state}
           handleClick={(event) => this._handleClick(event)}
           handleUpdate={(field, val) => this._handleUpdate(field, val)}
         />
+        <Compare selectedEv={selectedEv} calculatedEv={calculatedEv} />
         {/* <Selector
           stats={this.state}
           handleClick={() => this._handleClick()}
