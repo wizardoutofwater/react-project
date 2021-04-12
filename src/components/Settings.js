@@ -14,8 +14,8 @@ const Settings = (props) => {
   return (
     <section className="section">
       <div className="box d-shadow is-fluid has-background-grey-lighter p-3">
-        <h1 class="title">Step Two:</h1>
-        <h2 class="subtitle">Enter your settings<span className="has-text-weight-light">(and select which setting to solve for)</span> </h2>
+        <h1 className="title">Step Two:</h1>
+        <h2 className="subtitle">Enter your settings<span className="has-text-weight-light">(and select which setting to solve for)</span> </h2>
         <div className="columns ">
           <div className="column has-text-centered">
             <div>

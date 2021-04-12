@@ -1,7 +1,6 @@
 import { Component } from "react";
 import Footer from "./components/Footer";
 import Stats from "./components/Stats";
-import Selector from "./components/Selector";
 import Compare from "./components/Compare";
 import Settings from "./components/Settings";
 import Header from "./components/Header"
@@ -76,7 +75,7 @@ class App extends Component {
       calculatedEv,
     } = this.state;
     return (
-      <div className="App">
+      <div className="App container is-max-widescreen">
         <Header />
        <Instructions />
         <Conditions  selectedEv={selectedEv} handleUpdate={(field, val) => this._handleUpdate(field, val)} />
@@ -88,11 +87,7 @@ class App extends Component {
           handleUpdate={(field, val) => this._handleUpdate(field, val)}
         />
         <Compare selectedEv={selectedEv} calculatedEv={calculatedEv} />
-        {/* <Selector
-          stats={this.state}
-          handleClick={() => this._handleClick()}
-          handleUpdate={() => this._handleUpdate()}
-        /> */}
+    
         <Footer />
       </div>
     );

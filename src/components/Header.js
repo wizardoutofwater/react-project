@@ -14,8 +14,8 @@ const Header = () => {
     <div>
       <nav className="navbar ">
         <div className="navbar-brand">
-        <a class="navbar-item" href="#">
-      <img src="./photo-camera.svg" width="125" height="125"></img>
+        <a className="navbar-item" href="#">
+      <img src="./photo-camera.svg" alt="stylized point and shoot camera"/>
     </a>
           <div
             className="navbar-burger burger"

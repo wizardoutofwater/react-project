@@ -17,8 +17,8 @@ const Instructions = (props) => (
   </div>
            </div>
            <div className="column">
-           <figure class="image is-256x256">
-  <img src="./camera-roll.svg"></img>
+           <figure className="image is-256x256">
+  <img src="./camera-roll.svg" alt=" a roll of film"/>
 </figure>
           
               
