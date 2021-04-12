@@ -1,9 +1,12 @@
 import React from "react";
 import "../App.css";
 
-const Stats = (props) => (
-    <div>Calculated EV:{props.stats.calculatedEv}  EV: {props.stats.selectedEv}   Aperture: f/{props.stats.aperture}   Shutter: {props.stats.shutterSpeed} sec   Film Speed: {props.stats.filmSpeed}</div>
+const Stats = ({ stats }) => (
+  <div>
+    Calculated EV:{stats.calculatedEv} EV: {stats.selectedEv}{" "}
+    Aperture: f/{stats.aperture} Shutter: {stats.shutterSpeed} sec
+    Film Speed: {stats.filmSpeed}
+  </div>
+);
 
-)
-
-export default Stats
+export default Stats;
