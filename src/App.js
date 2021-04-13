@@ -1,4 +1,5 @@
 import { Component } from "react";
+import {BrowserRouter as Router,} from 'react-router-dom'
 import Footer from "./components/Footer";
 import Stats from "./components/Stats";
 import Compare from "./components/Compare";
@@ -75,7 +76,8 @@ class App extends Component {
       calculatedEv,
     } = this.state;
     return (
-      <div className="App container is-max-widescreen">
+      <Router>
+      <div className="App container is-max-desktop">
         <Header />
        <Instructions />
         <Conditions  selectedEv={selectedEv} handleUpdate={(field, val) => this._handleUpdate(field, val)} />
@@ -90,6 +92,7 @@ class App extends Component {
     
         <Footer />
       </div>
+      </Router>
     );
   }
 }

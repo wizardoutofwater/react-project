@@ -14,7 +14,7 @@ export const levels = {
     "5": "Night home interiors, average light. School or church auditoriums. Subjects lit by campfires or bonfires.",
     "6": "Brightly lit home interiors at night. Fairs, amusement parks.",
     "7": "Bottom of rainforest canopy. Brightly lighted nighttime streets. Indoor sports. Stage shows, circuses.",
-    "8": "Las Vegas or Times Square at night. Store windows. Campfires, bonfires, burning buildings. Ice shows, football, baseball etc. at night. Interiors with bright florescent lights.",
+    "8": "Las Vegas or Times Square at night. Store windows. Campfires, bonfires, gvml;d,zdgr;burning buildings. Ice shows, football, baseball etc. at night. Interiors with bright florescent lights.",
     "9": "Landscapes, city skylines 10 minutes after sunset. Neon lights, spotlighted subjects.",
     "10": "Landscapes and skylines immediately after sunset.",
     "11": "Sunsets. Subjects in deep shade.",
@@ -27,3 +27,32 @@ export const levels = {
     "22": "Extremely bright. Rarely encountered in nature.",
   };
   
+
+//   EV	Real-World Situation for Proper Exposure
+// 1This chart assumes ISO 100.  from Spencer Cox's Article 
+export const simpleLevels = {
+"-6" :	"Nighttime landscape under quarter moon",
+"-5" :	"Aurora borealis of moderate brightness",
+"-4" :	"Nighttime landscape under gibbous moon",
+"-3" :	"Nighttime landscape under full moon",
+"-2" :	"Nighttime snow or beach landscape under full moon",
+"-1" :	"End of blue hour",
+"0 ":	"Late in blue hour",
+"1 ":	"Middle of blue hour",
+"2 ":	"Distant cityscape at night",
+"3 ":	"Indoor scene lit only by dim window light",
+"4 ":	"Floodlit monuments or fountains at night",
+"5 ":	"Typical artificial indoor light",
+"6 ":	"Bright indoor lighting",
+"7 ":	"Fairs and theme parks at night",
+"8 ":	"Bright window displays and advertisements at night",
+"9 ":	"Nighttime sporting events under bright light",
+"10" :	"Moment after sunset on a clear day",
+"11" :	"Daylight on a foggy day",
+"12" :	"Moment before sunset on a clear day",
+"13" :	"Typical subject on a bright, cloudy day",
+"14" :	"Typical subject on a day with hazy sunlight",
+"15" :	"Full sunlight on a cloudless day, typical subject",
+"16" :	"Full sunlight on a cloudless day, bright subject (i.e. the beach)",
+"17" :	"Full sunlight on a cloudless day, highly reflective subject (i.e. snow)",
+};

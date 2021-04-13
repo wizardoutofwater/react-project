@@ -1,8 +1,7 @@
 import React from "react";
-import { levels } from "../evScale";
+import { levels } from "../constants/evScale";
 
 const Conditions = ({ selectedEv, handleUpdate }) => {
-  // let ev = JSON.stringify({selectedEv})
   let ev = { selectedEv }["selectedEv"];
   let evString = ev.toString();
   let selectedCondition = levels[evString];
