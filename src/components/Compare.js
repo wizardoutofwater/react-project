@@ -3,7 +3,7 @@ import "../App.css";
 
 const Compare = (props) => (
    <section className="section has-text-centered">
-       <div className="container">
+       <div className="box d-shadow">
        <div className="columns">
            <div className="column">
                <h1 className="title">Selected EV:</h1>

@@ -17,6 +17,7 @@ const Footer = (props) => (
         </small>
       </div>
     </div>
+    
     <div>Icons made by <a href="https://www.flaticon.com/authors/made-by-made" title="Made by Made">Made by Made</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
     <div>
@@ -33,3 +34,4 @@ const Footer = (props) => (
 );
 
 export default Footer;
+  
