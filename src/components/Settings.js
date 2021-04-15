@@ -1,21 +1,23 @@
 import React from "react";
 import "../App.css";
 
-const Settings = (props) => {
+const Settings = ({filmSpeed, shutterSpeed, aperture, handleUpdate, handleClick}) => {
   // console.log (props);    *** SHOULD I USE useState here?
-  const {
-    filmSpeed,
-    shutterSpeed,
-    aperture,
-    selectedEv,
-    calculatedEv,
-  } = props.stats;
+  // const {
+  //   filmSpeed,
+  //   shutterSpeed,
+  //   aperture,
+  // } = props.stats;
   // console.log(selectedEv);
   return (
-    <section className="section">
-      <div className="box d-shadow is-fluid has-background-grey-lighter p-3">
+    <section className="section  rounded-bg">
+      <div className="box bg-mintCream d-shadow   p-3">
+
+      <div className="block has-text-center-desktop">
         <h1 className="title">Step Two:</h1>
-        <h2 className="subtitle">Enter your settings<span className="has-text-weight-light">(and select which setting to solve for)</span> </h2>
+        <h2 className="subtitle  is-4">Enter your settings and hit 'Calculate' </h2>
+       </div>
+        {/* <h2  className="subtitle has-text-weight-light">Click the 'Save' button to add the settings to your roll!</h2> */}
         <div className="columns ">
           <div className="column has-text-centered">
             <div>
@@ -24,10 +26,18 @@ const Settings = (props) => {
                 <select
                   value={aperture}
                   onChange={(event) =>
-                    props.handleUpdate("aperture", event.target.value)
+                    handleUpdate("aperture", event.target.value)
                   }
                   id="aperture"
                 >
+                <option value="1">f/1.0</option>
+                <option value="1.4">f/1.4</option>
+                <option value="1.8">f/1.8</option>
+                <option value="2.0">f/2.0</option>
+                <option value="2.8">f/2.8</option>
+                <option value="3.5">f/3.5</option>
+                <option value="4">f/4.0</option>
+                <option value="5.6">f/5.6</option>
                   <option value="8">f/8</option>
                   <option value="11">f/11</option>
                   <option value="16">f/16</option>
@@ -43,12 +53,21 @@ const Settings = (props) => {
                 <select
                   value={shutterSpeed}
                   onChange={(event) =>
-                    props.handleUpdate("shutterSpeed", event.target.value)
+                    handleUpdate("shutterSpeed", event.target.value)
                   }
                   id="shutterSpeed"
                 >
-                  <option value=".01"> 1/100 sec.</option>
-                  <option value=".01"> 1/100 sec.</option>
+               
+                <option value="30"> 30 sec.</option>
+                <option value="15"> 15 sec.</option>
+                <option value="8"> 8 sec.</option>
+                <option value="4"> 4 sec.</option>
+                <option value="2"> 2 sec.</option>
+                <option value="1"> 1 sec.</option>
+                <option value=".5"> 1/2 sec.</option>
+                <option value=".25"> 1/4 sec.</option>
+                  <option value=".0125"> 1/8 sec.</option>
+                  <option value=".06667"> 1/15 sec.</option>
                   <option value=".03334"> 1/30 sec. </option>
                   <option value=".01667"> 1/60 sec.</option>
                   <option value=".01"> 1/100 sec.</option>
@@ -56,6 +75,7 @@ const Settings = (props) => {
                   <option value=".004"> 1/250 sec.</option>
                   <option value=".002"> 1/500 sec.</option>
                   <option value=".001"> 1/1000 sec.</option>
+                  <option value=".005"> 1/2000 sec.</option>
                 </select>
               </div>
             </div>
@@ -67,7 +87,7 @@ const Settings = (props) => {
                 <select
                   value={filmSpeed}
                   onChange={(event) =>
-                    props.handleUpdate("filmSpeed", event.target.value)
+                    handleUpdate("filmSpeed", event.target.value)
                   }
                   id="filmSpeed"
                 >
@@ -87,8 +107,8 @@ const Settings = (props) => {
       <div className="container mt-4">
         <div className="control">
           <button
-            className="button is-primary d-shadow"
-            onClick={(event) => props.handleClick(event)}
+            className="button is-rounded is-large d-shadow"
+            onClick={(event) => handleClick(event)}
             type="submit"
           >
             Calculate
