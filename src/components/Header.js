@@ -12,10 +12,11 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="navbar ">
+      <nav className="navbar bg-lightCream">
         <div className="navbar-brand">
         <a className="navbar-item" href="#">
-      <img src="./photo-camera.svg" alt="stylized point and shoot camera"/>
+      <img  className="mr-2" src="./photo-camera.svg" alt="stylized point and shoot camera"/>
+      evCALC
     </a>
           <div
             className="navbar-burger burger"

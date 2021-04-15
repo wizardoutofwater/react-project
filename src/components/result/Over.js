@@ -4,15 +4,13 @@ function Over({ text }) {
   return (
     <div>
       <div className="block">
-        <p>
+        <h2 className="subtitle">
           Your shot is <strong>overexposed</strong>.{" "}
-        </p>
-
-        <p>
-          {" "}
-          Try increasing your shutter speed (shorter exposure time) or closing
-          your aperture (higher f-stop #)
-        </p>
+        </h2>
+        <div className="has-text-weight-light">
+        <p >Try increasing your shutter speed (shorter exposure time)</p>
+           <p>or closing your aperture (higher f-stop #)</p>
+      </div>
       </div>
     </div>
   );

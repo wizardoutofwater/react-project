@@ -18,6 +18,18 @@ const Footer = (props) => (
       </div>
     </div>
 
+    
+{/* --- ICON CREDITS --- */}
+    <div>
+      Icons made by{" "}
+      <a href="https://www.flaticon.com/authors/ddara" title="dDara">
+        dDara
+      </a>{" "}
+      from{" "}
+      <a href="https://www.flaticon.com/" title="Flaticon">
+        www.flaticon.com
+      </a>
+    </div>
     <div>
       Icons made by{" "}
       <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">

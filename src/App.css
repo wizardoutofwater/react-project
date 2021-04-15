@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background-color: #FFFBEB; */
 }
 
 .App-logo {
@@ -36,10 +37,12 @@
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
+  0 100px 80px rgba(0, 0, 0, 0.12)  
 ;
 }
-
+.box{
+  background-color: #F7F7F7;
+}
 nav {
   position: relative;
 }
@@ -54,3 +57,7 @@ right: 0px;
   border-radius: 2em;
 }
 
+.title {
+
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}

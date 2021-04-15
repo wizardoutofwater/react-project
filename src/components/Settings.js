@@ -13,7 +13,7 @@ const Settings = (props) => {
   // console.log(selectedEv);
   return (
     <section className="section">
-      <div className="box d-shadow is-fluid has-background-grey-lighter p-3">
+      <div className="box bg-mintCream d-shadow is-fluid  p-3">
 
       <div className="block has-text-center-desktop">
         <h1 className="title">Step Two:</h1>
@@ -32,6 +32,14 @@ const Settings = (props) => {
                   }
                   id="aperture"
                 >
+                <option value="1">f/1.0</option>
+                <option value="1.4">f/1.4</option>
+                <option value="1.8">f/1.8</option>
+                <option value="2.0">f/2.0</option>
+                <option value="2.8">f/2.8</option>
+                <option value="3.5">f/3.5</option>
+                <option value="4">f/4.0</option>
+                <option value="5.6">f/5.6</option>
                   <option value="8">f/8</option>
                   <option value="11">f/11</option>
                   <option value="16">f/16</option>
@@ -51,8 +59,17 @@ const Settings = (props) => {
                   }
                   id="shutterSpeed"
                 >
-                  <option value=".01"> 1/100 sec.</option>
-                  <option value=".01"> 1/100 sec.</option>
+               
+                <option value="30"> 30 sec.</option>
+                <option value="15"> 15 sec.</option>
+                <option value="8"> 8 sec.</option>
+                <option value="4"> 4 sec.</option>
+                <option value="2"> 2 sec.</option>
+                <option value="1"> 1 sec.</option>
+                <option value=".5"> 1/2 sec.</option>
+                <option value=".25"> 1/4 sec.</option>
+                  <option value=".0125"> 1/8 sec.</option>
+                  <option value=".06667"> 1/15 sec.</option>
                   <option value=".03334"> 1/30 sec. </option>
                   <option value=".01667"> 1/60 sec.</option>
                   <option value=".01"> 1/100 sec.</option>
@@ -60,6 +77,7 @@ const Settings = (props) => {
                   <option value=".004"> 1/250 sec.</option>
                   <option value=".002"> 1/500 sec.</option>
                   <option value=".001"> 1/1000 sec.</option>
+                  <option value=".005"> 1/2000 sec.</option>
                 </select>
               </div>
             </div>
@@ -91,7 +109,7 @@ const Settings = (props) => {
       <div className="container mt-4">
         <div className="control">
           <button
-            className="button is-primary d-shadow"
+            className="button bg-honeyYellow d-shadow"
             onClick={(event) => props.handleClick(event)}
             type="submit"
           >
