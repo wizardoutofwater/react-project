@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
-import Stats from "./components/Stats";
+
 import Compare from "./components/Compare";
 import Settings from "./components/Settings";
 import Header from "./components/Header";
@@ -50,8 +50,6 @@ class App extends Component {
       filmSpeed,
       shutterSpeed,
       aperture,
-      selectedEv,
-      calculatedEv,
     } = this.state;
     // console.log("fStop " + aperture);
     // console.log("fStopSqaured " + aperture ** 2);
@@ -72,9 +70,6 @@ class App extends Component {
 
   render() {
     const {
-      filmSpeed,
-      shutterSpeed,
-      aperture,
       selectedEv,
       calculatedEv,
     } = this.state;

@@ -1,15 +1,13 @@
 import React from "react";
 import "../App.css";
 
-const Settings = (props) => {
+const Settings = ({filmSpeed, shutterSpeed, aperture, handleUpdate, handleClick}) => {
   // console.log (props);    *** SHOULD I USE useState here?
-  const {
-    filmSpeed,
-    shutterSpeed,
-    aperture,
-    selectedEv,
-    calculatedEv,
-  } = props.stats;
+  // const {
+  //   filmSpeed,
+  //   shutterSpeed,
+  //   aperture,
+  // } = props.stats;
   // console.log(selectedEv);
   return (
     <section className="section  rounded-bg">
@@ -28,7 +26,7 @@ const Settings = (props) => {
                 <select
                   value={aperture}
                   onChange={(event) =>
-                    props.handleUpdate("aperture", event.target.value)
+                    handleUpdate("aperture", event.target.value)
                   }
                   id="aperture"
                 >
@@ -55,7 +53,7 @@ const Settings = (props) => {
                 <select
                   value={shutterSpeed}
                   onChange={(event) =>
-                    props.handleUpdate("shutterSpeed", event.target.value)
+                    handleUpdate("shutterSpeed", event.target.value)
                   }
                   id="shutterSpeed"
                 >
@@ -89,7 +87,7 @@ const Settings = (props) => {
                 <select
                   value={filmSpeed}
                   onChange={(event) =>
-                    props.handleUpdate("filmSpeed", event.target.value)
+                    handleUpdate("filmSpeed", event.target.value)
                   }
                   id="filmSpeed"
                 >
@@ -110,7 +108,7 @@ const Settings = (props) => {
         <div className="control">
           <button
             className="button is-rounded is-large d-shadow"
-            onClick={(event) => props.handleClick(event)}
+            onClick={(event) => handleClick(event)}
             type="submit"
           >
             Calculate

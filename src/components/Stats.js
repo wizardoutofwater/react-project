@@ -13,7 +13,7 @@ const Stats = ({ stats }) => {
      setMessage('Your Shot is Correctly Exposed')
    }
    console.log(message);
-  }, [stats.selectedEv, stats.calculatedEv])
+  }, [stats.selectedEv, stats.calculatedEv, message])
 return (
   <div>
     Calculated EV:{stats.calculatedEv} EV: {stats.selectedEv}{" "}
