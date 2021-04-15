@@ -18,7 +18,8 @@ const Conditions = ({ selectedEv, handleUpdate }) => {
           <div className="columns is-centered is-vcentered">
             <div className="column has-text-left-desktop">
               <h1 className="title">Step One:</h1>
-              <h2 className="subtitle is-4">Select your conditions </h2>
+              <h2 className="subtitle mb-0 is-4">Select your conditions </h2>
+              <h3 className="mb-4"><a href="#evScale">Click Here for more EV Scale info</a></h3>
               <div className="select is-large">
                 <select
                   value={selectedEv}

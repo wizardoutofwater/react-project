@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Results from "./Results";
+import Results from "./result/Results";
 import "../App.css";
 
 const Compare = ({ selectedEv, calculatedEv }) => {

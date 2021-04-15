@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../App.css";
-import Over from "./result_message/Over";
-import Under from "./result_message/Under";
-import Success from "./result_message/Success";
+
+import Over from "./Over";
+import Under from "./Under";
+import Success from "./Success";
 const Results = ({ selectedEv, calculatedEv }) => {
   const [status, setStatus] = useState("initial");
 

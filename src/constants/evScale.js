@@ -5,7 +5,7 @@ export const levels = {
     "-4": "Night, subject under half moon.",
     "-3": "Night, subject under full moon.",
     "-2": "Night, snowscape under full moon.",
-    "-1": "Subjects lit by dim ambient artificial light.",
+    "-1": "Subjects lit by dim ambient artificial light. End of Blue Hour",
     "0": "Subjects lit by dim ambient artificial light.",
     "1": "Distant view of lighted skyline.",
     "2": "Lightning (with time exposure). Total eclipse of moon.",
