@@ -16,9 +16,9 @@ const Conditions = ({ selectedEv, handleUpdate }) => {
       <section className="section">
         <div className="box p-3">
           <div className="columns is-centered is-vcentered">
-            <div className="column">
+            <div className="column has-text-left-desktop">
               <h1 className="title">Step One:</h1>
-              <h2 className="subtitle">Select your conditions </h2>
+              <h2 className="subtitle is-4">Select your conditions </h2>
               <div className="select is-large">
                 <select
                   value={selectedEv}

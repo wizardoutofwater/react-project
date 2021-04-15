@@ -14,8 +14,12 @@ const Settings = (props) => {
   return (
     <section className="section">
       <div className="box d-shadow is-fluid has-background-grey-lighter p-3">
+
+      <div className="block has-text-center-desktop">
         <h1 className="title">Step Two:</h1>
-        <h2 className="subtitle">Enter your settings<span className="has-text-weight-light">(and select which setting to solve for)</span> </h2>
+        <h2 className="subtitle  is-4">Enter your settings and hit 'Calculate' </h2>
+       </div>
+        {/* <h2  className="subtitle has-text-weight-light">Click the 'Save' button to add the settings to your roll!</h2> */}
         <div className="columns ">
           <div className="column has-text-centered">
             <div>
