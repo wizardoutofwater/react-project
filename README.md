@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ab3eadb0-15b9-47dd-9a47-ef6bb6158f93/deploy-status)](https://app.netlify.com/sites/ev-calc/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
