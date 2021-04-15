@@ -12,8 +12,8 @@ const Settings = (props) => {
   } = props.stats;
   // console.log(selectedEv);
   return (
-    <section className="section">
-      <div className="box bg-mintCream d-shadow is-fluid  p-3">
+    <section className="section  rounded-bg">
+      <div className="box bg-mintCream d-shadow   p-3">
 
       <div className="block has-text-center-desktop">
         <h1 className="title">Step Two:</h1>
@@ -109,7 +109,7 @@ const Settings = (props) => {
       <div className="container mt-4">
         <div className="control">
           <button
-            className="button bg-honeyYellow d-shadow"
+            className="button is-rounded is-large d-shadow"
             onClick={(event) => props.handleClick(event)}
             type="submit"
           >

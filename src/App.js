@@ -87,7 +87,7 @@ class App extends Component {
             selectedEv={selectedEv}
             handleUpdate={(field, val) => this._handleUpdate(field, val)}
           />
-          <Stats stats={this.state} />
+          {/* <Stats stats={this.state} /> */}
 
           <Settings
             stats={this.state}

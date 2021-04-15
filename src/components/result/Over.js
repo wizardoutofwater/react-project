@@ -3,7 +3,7 @@ import React from "react";
 function Over({ text }) {
   return (
     <div>
-      <div className="block">
+      <div className="notification  bg-glass-yellow ">
         <h2 className="subtitle">
           Your shot is <strong>overexposed</strong>.{" "}
         </h2>

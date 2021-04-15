@@ -3,7 +3,7 @@ import React from 'react'
 function Success ({text}) {
     return (
         <div>
-      <div className="block">
+      <div className="notification bg-glass-blue">
       <h2 className="subtitle">Your shot is <strong>perfect!</strong>.  </h2>
       <div className="has-text-weight-light">
          <p>Put this down. Pick up your camera. Take the Shot.</p>

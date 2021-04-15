@@ -10,19 +10,14 @@ const Instructions = (props) => (
             <div className="content">
               <h2 className="title">Less Guesses, More Keepers.</h2>
               <p>
-                Not tricks, Michael, illusions. No, I did not kill Kitty.
-                However, I am going to oblige and answer the nice officer's
-                questions because I am an honest man with no secrets to hide.
-                Say goodbye to these, because it's the last time!
+                 Select the lighting conditions and your camera's exposure settings below and let evCALC do the math!</p>
+
+                
+                 <p>No more missing a moment due to a poorly exposed frame. That expensive bracketing technique? (300% more expensive per photo!) Gone.
+                Never again depend on that fifty year old meter built into your rangefinder. </p>
+                <p> evCALC is here to help you make sure more of your shots turn out just the way you intended. 
               </p>
-              <ol>
-                <li>But existing is basically all I do!</li>
-                <li>Oh God, what have I done?</li>
-                <li>
-                  Please, Don-Bot… look into your hard drive, and open your
-                  mercy file!
-                </li>
-              </ol>
+             
             </div>
           </div>
         </div>

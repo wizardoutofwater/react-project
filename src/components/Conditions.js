@@ -15,7 +15,7 @@ const Conditions = ({ selectedEv, handleUpdate }) => {
     <>
     
       <section className="section">
-        <div className="box p-3">
+        <div className="box d-shadow p-3">
           <div className="columns is-centered is-vcentered">
             <div className="column has-text-left-desktop">
               <h1 className="title">Step One:</h1>
